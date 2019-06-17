@@ -2,6 +2,7 @@ package stepDefinations;
 
 import java.util.HashMap;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -26,7 +27,7 @@ public class GuruDemoSite {
 	@When("^Login the site with Username$")
 	public void login_the_site_with_USername() throws Throwable {
 		PageFactory.initElements(driver, LoginPage.class);
-		//driver.findElement(By.id("dfd"));
+		driver.findElement(By.id("dfd"));
 		LogInAction.execute(data);
 	}
 
